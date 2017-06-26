@@ -1,5 +1,5 @@
 # YelpHelp
-YelpHelp is a data science project completed during my time as an Insight Data Science Fellow. The goal is to find Yelp "tipping point reviews that predict a sudden decline in ratings. 
+YelpHelp is a data science project completed during my time as an Insight Data Science Fellow. The goal is to find "tipping point" reviews that predict a sudden decline in ratings. 
 
 The Jupyter notebook "Find Tipping Points" uses probabilistic programming to discover restaurants that have distinct switchpoints where there's a change in average rating. I then use these "tipping point" labels to build a logistic regression to classify whether an individual review comes from a stable period or from a tipping point in the "YelpHelp" Jupyter Notebook.
 
