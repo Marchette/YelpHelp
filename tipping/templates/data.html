@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<title>Yelp Help</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../static/input.css" rel="stylesheet">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="../static/css/bootstrap.css">
+
+<nav class="fh5co-nav-style-1" role="navigation" style="background-image: url(../static/images/full_2.jpg);">
+	<div class="row">
+		<div class="col-md-12" style="height:40px;"></div>
+	</div>
+</nav>
+
+<div class="row">
+	<div class="col-md-12" style="height:40px;"></div>
+</div>
+
+<div class="row" id="analysis-row">
+    <div class="col-md-4" id="analysis-container">
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.css"
+        rel="stylesheet" type="text/css">
+
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"></script>
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.js"></script>
+
+        <!-- Bokeh Figures -->
+        {{ fig_script|indent(4)|safe }}
+        {{ fig_div|safe }}
+    </div>
+</div>
+
+<div class="row" id="analysis-row-text">
+	<div class="col-md-4" id="analysis-padding">
+		<center>
+			<h3>Hover over a review to read its text. Larger circles are reviews the model believes might be at a tipping point.</h3>
+		</center>
+	</div>
+</div>
+
+<link rel="stylesheet" href="../static/css/bootstrap.css">
+
+<div class="navbar navbar-fixed-bottom" style="background-image: url(../static/images/cafe.jpg);">
+
+	<div class="row">
+		<div class="col-md-12" style="height:120px;"></div>
+	</div>
+
+</div>
+		
+{% endblock %}
+
+
+
